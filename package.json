@@ -1,6 +1,6 @@
 {
-  "name": "oc-modal",
-  "version": "1.0.0",
+  "name": "@samakunchan/oc-modal",
+  "version": "1.0.2",
   "description": "Modal pour le projet étudiant et projet final de OpenClassroom",
   "author": "samakunchan",
   "license": "MIT",
@@ -24,7 +24,7 @@
     "deploy": "gh-pages -d example/build"
   },
   "peerDependencies": {
-    "react": "^16.0.0"
+    "react": "^18.3.1"
   },
   "devDependencies": {
     "@babel/plugin-proposal-unicode-property-regex": "^7.18.6",

@@ -1,13 +1,14 @@
 # oc-modal
 
-> Modal pour le projet étudiant et projet final de OpenClassroom.
+> Simple modal for the final project OpenClassroom.
 
-[![NPM](https://img.shields.io/npm/v/oc-modal.svg)](https://www.npmjs.com/package/oc-modal) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/badge/npm-v1.0.2-blue)](https://www.npmjs.com/package/@samakunchan/oc-modal)
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save oc-modal
+npm install --save @samakunchan/oc-modal
 ```
 
 ## Usage
@@ -17,7 +18,7 @@ import { useState } from 'react';
 import { OCModalComponent } from 'oc-modal';
 import 'oc-modal/dist/index.css';
 
-const EmployeeCreateFormComponent = () => {
+const MyComponent = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const message = 'This is my modal';
   const closeModal = () => setIsOpenModal(false);
@@ -29,7 +30,7 @@ const EmployeeCreateFormComponent = () => {
   />;
 }
 
-export default EmployeeCreateFormComponent;
+export default MyComponent;
 ```
 
 ## License

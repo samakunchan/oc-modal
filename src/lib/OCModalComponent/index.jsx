@@ -1,6 +1,19 @@
 import React from 'react';
 import styles from '../../styles.module.css';
 
+/**
+ * Simple modal
+ * @param message {string} Add your message here.
+ * @param isModalActive {boolean} Active the modal.
+ * @param layoutStyle {CSSProperties} style css.
+ * @param modalStyle {CSSProperties} style css.
+ * @param btnStyle {CSSProperties} style css.
+ * @param closeBtnChidlren {JSX.Element} If it is defined, it adds a JSX component instead the default design.
+ * @param closeModal {function} Required. Function to close the modal.
+ * @param className {string} add class name if it is defined.
+ * @return {null|JSX.Element} Return modal if active.
+ * @constructor
+ */
 export const OCModalComponent = ({
   message = 'My modal',
   isModalActive = null,
@@ -8,7 +21,7 @@ export const OCModalComponent = ({
   layoutStyle = null,
   modalStyle = null,
   btnStyle = null,
-  updateModal = null,
+  closeModal = null,
   className = null,
 }) => {
   return (
@@ -19,7 +32,7 @@ export const OCModalComponent = ({
           {closeBtnChidlren !== null ? (
             closeBtnChidlren
           ) : (
-            <a className={styles.closeBtn} onClick={updateModal} style={btnStyle}></a>
+            <a className={styles.closeBtn} onClick={closeModal} style={btnStyle}></a>
           )}
         </div>
       </section>
