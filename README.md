@@ -2,7 +2,7 @@
 
 > Simple modal for the final project OpenClassroom.
 
-[![NPM](https://img.shields.io/badge/npm-v1.0.2-blue)](https://www.npmjs.com/package/@samakunchan/oc-modal)
+[![NPM](https://img.shields.io/badge/npm-v1.0.3-blue)](https://www.npmjs.com/package/@samakunchan/oc-modal)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
@@ -26,7 +26,7 @@ const MyComponent = () => {
   return <OCModalComponent
     message={message}
     isModalActive={isOpenModal}
-    updateModal={closeModal}
+    closeModal={closeModal}
   />;
 }
 

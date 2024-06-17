@@ -8,7 +8,7 @@ import styles from '../../styles.module.css';
  * @param layoutStyle {CSSProperties} style css.
  * @param modalStyle {CSSProperties} style css.
  * @param btnStyle {CSSProperties} style css.
- * @param closeBtnChidlren {JSX.Element} If it is defined, it adds a JSX component instead the default design.
+ * @param closeBtnChildren {JSX.Element} If it is defined, it adds a JSX component instead the default design.
  * @param closeModal {function} Required. Function to close the modal.
  * @param className {string} add class name if it is defined.
  * @return {null|JSX.Element} Return modal if active.
@@ -17,7 +17,7 @@ import styles from '../../styles.module.css';
 export const OCModalComponent = ({
   message = 'My modal',
   isModalActive = null,
-  closeBtnChidlren = null,
+  closeBtnChildren = null,
   layoutStyle = null,
   modalStyle = null,
   btnStyle = null,
@@ -29,8 +29,8 @@ export const OCModalComponent = ({
       <section className={styles.blockerActive} style={layoutStyle}>
         <div className={className ?? styles.modalActive} style={modalStyle}>
           {message}
-          {closeBtnChidlren !== null ? (
-            closeBtnChidlren
+          {closeBtnChildren !== null ? (
+            closeBtnChildren
           ) : (
             <a className={styles.closeBtn} onClick={closeModal} style={btnStyle}></a>
           )}
