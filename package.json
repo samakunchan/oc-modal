@@ -1,7 +1,7 @@
 {
   "name": "oc-modal",
   "version": "1.0.0",
-  "description": "Modal pour le projet étudiant et porjet final de OpenClassroom",
+  "description": "Modal pour le projet étudiant et projet final de OpenClassroom",
   "author": "samakunchan",
   "license": "MIT",
   "repository": "samakunchan/oc-modal",
@@ -27,7 +27,7 @@
     "react": "^16.0.0"
   },
   "devDependencies": {
-    "microbundle-crl": "^0.13.10",
+    "@babel/plugin-proposal-unicode-property-regex": "^7.18.6",
     "babel-eslint": "^10.0.3",
     "cross-env": "^7.0.2",
     "eslint": "^6.8.0",
@@ -41,6 +41,7 @@
     "eslint-plugin-react": "^7.17.0",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
+    "microbundle-crl": "^0.13.10",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.0.4",
     "react": "^16.13.1",
@@ -49,5 +50,9 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "styled-component": "^2.8.0",
+    "styled-components": "^6.1.11"
+  }
 }

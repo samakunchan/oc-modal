@@ -1,10 +1,10 @@
-import React from 'react'
+import React from 'react';
 
-import { ExampleComponent } from 'oc-modal'
-import 'oc-modal/dist/index.css'
+import { OCModalComponent } from 'oc-modal';
+import 'oc-modal/dist/index.css';
 
 const App = () => {
-  return <ExampleComponent text="Create React Library Example 😄" />
-}
+  return <OCModalComponent text='Create React Library Example 😄' />;
+};
 
-export default App
+export default App;
