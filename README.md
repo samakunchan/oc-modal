@@ -11,23 +11,32 @@
 npm install --save @samakunchan/oc-modal
 ```
 
+```bash
+yarn add --save @samakunchan/oc-modal
+```
+
 ## Usage
 
 ```jsx
 import { useState } from 'react';
-import { OCModalComponent } from 'oc-modal';
-import 'oc-modal/dist/index.css';
+import { OCModalComponent } from '@samakunchan/oc-modal';
+import '@samakunchan/oc-modal/dist/index.css';
 
 const MyComponent = () => {
   const [isOpenModal, setIsOpenModal] = useState(false);
   const message = 'This is my modal';
   const closeModal = () => setIsOpenModal(false);
 
-  return <OCModalComponent
-    message={message}
-    isModalActive={isOpenModal}
-    closeModal={closeModal}
-  />;
+  return (
+    <div>
+      <button onClick={() => setIsOpenModal(true)}>Open my modal</button>
+      <OCModalComponent
+        message={message}
+        isModalActive={isOpenModal}
+        closeModal={closeModal}
+      />
+    </div>
+  );
 }
 
 export default MyComponent;
